@@ -6,7 +6,6 @@ use JenkinsKhan\Jenkins;
 
 class Executor
 {
-
     /**
      * @var \stdClass
      */
@@ -58,7 +57,6 @@ class Executor
         return $this->executor->number;
     }
 
-
     /**
      * @return int|null
      */
@@ -102,9 +100,9 @@ class Executor
     }
 
     /**
-     * @param Jenkins $jenkins
+     * @param \JenkinsKhan\Jenkins $jenkins
      *
-     * @return Job
+     * @return $this
      */
     public function setJenkins(Jenkins $jenkins)
     {

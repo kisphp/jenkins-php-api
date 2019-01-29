@@ -6,7 +6,6 @@ use JenkinsKhan\Jenkins;
 
 class Computer
 {
-
     /**
      * @var \stdClass
      */
@@ -16,7 +15,6 @@ class Computer
      * @var Jenkins
      */
     private $jenkins;
-
 
     /**
      * @param \stdClass $computer
@@ -37,7 +35,6 @@ class Computer
     }
 
     /**
-     *
      * @return bool
      */
     public function isOffline()
@@ -46,7 +43,6 @@ class Computer
     }
 
     /**
-     *
      * returns null when computer is launching
      * returns \stdClass when computer has been put offline
      *
@@ -58,7 +54,6 @@ class Computer
     }
 
     /**
-     *
      * @return Computer
      */
     public function toggleOffline()
@@ -69,7 +64,6 @@ class Computer
     }
 
     /**
-     *
      * @return Computer
      */
     public function delete()

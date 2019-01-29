@@ -6,7 +6,6 @@ use JenkinsKhan\Jenkins;
 
 class Queue
 {
-
     /**
      * @var \stdClass
      */

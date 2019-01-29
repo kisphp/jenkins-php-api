@@ -6,7 +6,6 @@ use JenkinsKhan\Jenkins;
 
 class Job
 {
-
     /**
      * @var \stdClass
      */

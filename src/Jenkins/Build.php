@@ -6,35 +6,11 @@ use JenkinsKhan\Jenkins;
 
 class Build
 {
-
-    /**
-     * @var string
-     */
     const FAILURE = 'FAILURE';
-
-    /**
-     * @var string
-     */
     const SUCCESS = 'SUCCESS';
-
-    /**
-     * @var string
-     */
     const RUNNING = 'RUNNING';
-
-    /**
-     * @var string
-     */
     const WAITING = 'WAITING';
-
-    /**
-     * @var string
-     */
     const UNSTABLE = 'UNSTABLE';
-
-    /**
-     * @var string
-     */
     const ABORTED = 'ABORTED';
 
     /**
@@ -46,7 +22,6 @@ class Build
      * @var Jenkins
      */
     private $jenkins;
-
 
     /**
      * @param \stdClass $build
@@ -63,7 +38,7 @@ class Build
      */
     public function getInputParameters()
     {
-        $parameters = array();
+        $parameters = [];
 
         if (!property_exists($this->build->actions[0], 'parameters')) {
             return $parameters;
@@ -234,9 +209,9 @@ class Build
     }
 
     /**
-     * @param Jenkins $jenkins
+     * @param \JenkinsKhan\Jenkins $jenkins
      *
-     * @return Job
+     * @return $this
      */
     public function setJenkins(Jenkins $jenkins)
     {
@@ -245,6 +220,9 @@ class Build
         return $this;
     }
 
+    /**
+     * @return mixed
+     */
     public function getBuiltOn()
     {
         return $this->build->builtOn;

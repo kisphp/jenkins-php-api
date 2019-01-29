@@ -6,12 +6,10 @@ use JenkinsKhan\Jenkins;
 
 class JobQueue
 {
-
     /**
      * @var \stdClass
      */
     private $jobQueue;
-
 
     /**
      * @var Jenkins
@@ -79,7 +77,9 @@ class JobQueue
     }
 
     /**
-     * @param Jenkins $jenkins
+     * @param \JenkinsKhan\Jenkins $jenkins
+     *
+     * @return $this
      */
     public function setJenkins(Jenkins $jenkins)
     {

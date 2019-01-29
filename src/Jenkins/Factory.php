@@ -6,7 +6,6 @@ use JenkinsKhan\Jenkins;
 
 class Factory
 {
-
     /**
      * @param string $url
      *

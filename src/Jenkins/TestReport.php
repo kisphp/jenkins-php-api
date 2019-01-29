@@ -6,7 +6,6 @@ use JenkinsKhan\Jenkins;
 
 class TestReport
 {
-
     /**
      * @var Jenkins
      */
@@ -125,7 +124,7 @@ class TestReport
         $suite  = $this->getSuite($id);
         $status = 'PASSED';
         foreach ($suite->cases as $case) {
-            if ($case->status == 'FAILED') {
+            if ($case->status === 'FAILED') {
                 $status = 'FAILED';
                 break;
             }
